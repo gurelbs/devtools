@@ -23,7 +23,7 @@ footer a{
 }
 footer a:hover
 {
-    color: rgba(255, 166, 0, 0.726);
+    color: rgba(67, 168, 182, 0.726);
     text-decoration-line: overline;
     border-bottom-style: double;
 }
