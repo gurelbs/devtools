@@ -30,9 +30,8 @@ li{
     text-shadow: 0 1px 10px black;
 }
 .info-text h1{
-    font-size: 5rem;
+    font-size: calc(4rem + 2vmin);
     font-weight: 200;
-
 }
 .info-text p{
     font-size: 1.5rem;
@@ -43,7 +42,6 @@ li{
     width: 300px;
     text-align: center;
     margin-top: 1rem;
-
 }
 .info-text button{
     border: none;
@@ -98,3 +96,28 @@ footer a:hover{
 .red{
     color: rgba(255, 0, 0, 0.842);
 }
+
+
+@media (max-width: 575.98px) { 
+    .info-text{
+        padding: 5rem 1.5rem 0 1.5rem;
+        color: white;
+        text-shadow: 0 1px 10px black;
+        text-align: center;
+    }
+    .info-text h1{
+        font-size: calc(2rem + 2vmin);
+        font-weight: 300;
+    }
+    .info-text p{
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+        font-size: 1rem;
+        display: grid;
+        place-items: center center;
+    }
+    .info-text button{
+        margin-top: 3rem;
+    }
+ }
