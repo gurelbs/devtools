@@ -53,6 +53,15 @@ li{
     padding: .5rem 1rem;
     margin-top: 1rem;
 }
+.info-text a{
+    color: white;
+    text-decoration: none;
+}
+.info-text a:hover{
+    color: white;
+    border-top-style: groove;
+    border-bottom-style: groove;
+}
 .info-text button:hover{
     background: rgba(90, 24, 138, 0.644);
     transform: scale(1.1);
