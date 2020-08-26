@@ -87,6 +87,9 @@ li{
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 }
+.cont-padding h1,.cont-padding h4{
+    text-align: center;
+}
 /* footer */
 
 footer{
@@ -139,5 +142,8 @@ footer a:hover{
     }
     .info-text button{
         margin-top: 3rem;
+    }
+    nav ul li,section .h1,.cont-padding h4{
+        text-align: center;
     }
  }
