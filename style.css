@@ -79,11 +79,11 @@ li{
     padding: .5rem 100px;
     color: white;
 }
-.cont-padding{
+.container{
     padding-bottom: 2rem;
     margin-bottom: 2rem;
 }
-.container h1{
+.cont-padding h1{
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 }
