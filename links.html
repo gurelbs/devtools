@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <style>
+      .card{border-radius: 0;}
+      .card:first-child{border-radius: 1rem 1rem 0 0;}
+      .card:last-child{border-radius:0 0 1rem 1rem;}
+    </style>
     <title>DevTools</title>
 </head>
 </head>
@@ -42,39 +47,84 @@
 
     <section class="container cont-padding">
       <div>
-        <h1 class="h1">לינקים שימושיים</h1>
-        <div>
-          <h4 class="h4 bg-gray"><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></h4>
-          <p>
-            W3 Schools הוא אתר ללמידת שפות תכנות הכולל מדריכים, מבחנים ושלל דוגמאות. <br>
-            להלן<a href="https://www.w3schools.com/" target="_blank"> אתר הבית </a> של W3 Schools,
-            והנה עוד <a href="https://www.w3schools.com/html/default.asp" target="_blank"> קישור </a>ישר למדריך HTML.
-          </p>
-        </div>
-        <div>
-          <h4 class="h4 bg-gray"><a href="https://developer.mozilla.org/he/" target="_blank">MDN</a></h4>
-          <p>
-            לחברת מוזילה, יש קרן ללא מטרות רווח הכוללת משאבים שנוצרו עבור מפתחים, על־ידי מפתחים. <br>
-          כאן תוכלו למוצא הררי מידע על פיתוח אתרים: <a href="https://developer.mozilla.org/he/" target="_blank">MDN Web Docs</a>
-          <br>בנוסף, אפשר להתחיל <a href="https://developer.mozilla.org/he/docs/Learn" target="_blank">כאן</a>, ישר למדריך Web Development.
-          </p>
-        </div>
-        <div>
-          <h4 class="h4 bg-gray"><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></h4>
-          <p>פלטפורמה מעולה ללמידת שפות תכנות למתחילים, לימוד בצורה הדרגתית עד להשלמת פרוייקטים שלמים. 
-            <br>ניתן לקבל אישור ותעודה לאחר השלמת כל חלק למידה. <br>
-          הנה קישור ל<a href="https://www.freecodecamp.org/" target="_blank">דף הבית</a>.</p>
-        </div>
-        <div>
-          <h4 class="h4 bg-gray"><a href="https://codepen.io/" target="_blank">Codepen</a></h4>          
-          <p>פלטפורמה לכתיבת ושיתוף קוד אונליין<br>
-          הנה קישור ל<a href="https://codepen.io/" target="_blank">דף הבית</a>.</p>
-        </div>
-        <div>
-          <h4 class="h4 bg-gray"><a href="https://codesandbox.io/" target="_blank">CodeSandBox</a></h4>          
-          <p>פלטפורמה נוספת לכתיבת ושיתוף קוד אונליין הכוללת גם ספריות ממשק משתמש כמו React. <br>
-          הנה קישור ל<a href="https://codesandbox.io/" target="_blank">דף הבית</a>.</p>
-        </div>
+        <h1 class="display-4">לינקים שימושיים</h1>
+
+        <div id="accordion">
+          <div class="card bg-dark text-light text-center mx-auto">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-decoration-none card-title text-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h1 class="display-4">ללמוד</h1>
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card bg-dark text-light text-center mx-auto">
+                <div class="card-body">
+                  <div class="card-text">
+                    <a href="https://www.w3schools.com/" target="_blank" class="h1 text-decoration-none text-dark bg-light px-5 rounded">W3 Schools</a>
+                    <p class="h4 font-weight-light mt-3 mb-5">
+                      W3 Schools הוא אתר ללמידת שפות תכנות הכולל מדריכים, מבחנים ושלל דוגמאות. <br>
+                      להלן<a href="https://www.w3schools.com/" target="_blank" class="text-decoration-none"> אתר הבית </a> של W3 Schools,
+                      והנה עוד <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="text-decoration-none"> קישור </a>ישר למדריך HTML.
+                    </p>
+                  </div>
+                  <div class="card-text">
+                    <a href="https://developer.mozilla.org/he/" target="_blank" class="h1 text-decoration-none text-dark bg-light px-5 rounded">MDN</a>
+                    <p class="h4 font-weight-light mt-3 mb-5">
+                      לחברת מוזילה, יש קרן ללא מטרות רווח הכוללת משאבים שנוצרו עבור מפתחים, על־ידי מפתחים. <br>
+                    כאן תוכלו למוצא הררי מידע על פיתוח אתרים: <a href="https://developer.mozilla.org/he/" target="_blank">MDN Web Docs</a>
+                    <br>בנוסף, אפשר להתחיל <a href="https://developer.mozilla.org/he/docs/Learn" target="_blank">כאן</a>, ישר למדריך Web Development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark text-light text-center mx-auto">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-decoration-none card-title text-light collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h5 class="display-4">להתאמן</h5>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-text">
+                  <a href="https://www.freecodecamp.org/" target="_blank" class="h1 text-decoration-none text-dark bg-light px-5 rounded">FreeCodeCamp</a>
+                  <p class="h4 font-weight-light mt-3 mb-5">פלטפורמה מעולה ללמידת שפות תכנות למתחילים, לימוד בצורה הדרגתית עד להשלמת פרוייקטים שלמים. 
+                    <br>ניתן לקבל אישור ותעודה לאחר השלמת כל חלק למידה. <br>
+                  הנה קישור ל<a href="https://www.freecodecamp.org/" target="_blank">דף הבית</a>.</p>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark text-light text-center mx-auto">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-decoration-none card-title text-light collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h5 class="display-4">ליצור</h5>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <div class="card-text">
+                  <a href="https://codepen.io/"  target="_blank" class="h1 text-decoration-none text-dark bg-light px-5 rounded">Codepen</a>
+                  <p class="h4 font-weight-light mt-3 mb-5">פלטפורמה לכתיבת ושיתוף קוד אונליין<br>
+                    הנה קישור ל<a href="https://codepen.io/" target="_blank">דף הבית</a>.</p>
+                </div>
+                <div class="card-text">
+                  <a href="https://codesandbox.io/" target="_blank" class="h1 text-decoration-none text-dark bg-light px-5 rounded">CodeSandBox</a>
+                  <p class="h4 font-weight-light mt-3 mb-5">פלטפורמה נוספת לכתיבת ושיתוף קוד אונליין הכוללת גם ספריות ממשק משתמש כמו React. <br>
+                    הנה קישור ל<a href="https://codesandbox.io/" target="_blank">דף הבית</a>.</p>
+                </div>   
+              </div>
+            </div>
+          </div>
+        </div>        
       </div>
     </section>
     <footer class="mt-4">
